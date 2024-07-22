@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+}
+
+
+h1 {
+    width: 100%;
+    flex: content;
+    font-size: 3.5rem;
+    background-color: rgba(7, 24, 206, 0.674); 
+    text-align: center;
+    box-shadow: 10px 1px 2px #0000005e;
+}
+
+
+
+
+
+/* PANTALLA INICIO */
+
+#pantalla-inicio {
+    flex: 6 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#pantalla-inicio h2 {
+    color: #333;
+    text-align: center;
+}
+
+
+#container-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.btn {
+    width: 270px;
+    color: #fff;
+    padding: 5%;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg,rgba(7, 24, 206, 0.674), #7991da);
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(110%, 110%);
+}
+
+
+/* PANTALLA QUIZ  */
+
+#pantalla-quiz {
+    display: none;
+    width: 70%;
+    flex: 6 1 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+    gap: 100px;
+}
+
+#pantalla-quiz span {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    background: linear-gradient(45deg, #6d83c4, #819be9);
+    box-shadow:  1px 1px 2px #7890d8;
+}
+
+#pantalla-quiz span p {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#pantalla-quiz input {
+    height: 5vh;
+    border: #7991da solid 1px;
+}
+
+
+/* PANTALLA RESULTADOS */
+
+#pantalla-resultados {
+    display: none;
+    flex: 6 1 100%;
+}
+
+
+
+
+
+footer {
+    flex: content;
+    background-color: rgba(7, 24, 206, 0.674);
+    padding: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PC */
+
+@media screen and (min-width: 1024px){
+    
+    footer {
+        padding: 1%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_operaciones.css">
+</head>
+<body>
+    <h1><a href="index.html">MATH QUIZ</a></h1>
+
+    <!-- PANTALLA QUIZ -->
+
+    <div id="pantalla-quiz">
+        <span><p id="operation-container"></p></span>
+        <span id="mensaje"></span>
+        <input type="number" id="result-input">
+        <button class="btn" id="submit" onclick="resultados()">Siguiente</button>
+    </div>
+
+     <!-- PANTALLA RESULTADOS -->
+
+    <div id="pantalla-resultados">
+        <h2>CORRECTAS: <span id="correctas"></span></h2>
+        <h2>INCORRECTAS: <span id="incorrectas"></span></h2>
+        <h2>PUNTAJE: <span id="puntaje"></span></h2>
+        <a href="index.html"><button class="btn">VOLVER AL INICIO</button></a>
+    </div>
+
+      <!-- FOOTER -->
+
+    <footer>Creado por Lucas Ramírez</footer>
+
+<script src="/scripts/division.js"></script>
+</body>
+</html>
