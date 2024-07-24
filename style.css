@@ -40,24 +40,28 @@ h1 {
     flex: 6 1 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
 #pantalla-inicio h2 {
     color: #333;
     text-align: center;
+    font-size: 2rem;
 }
 
 
 #container-btn {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    width: 100%;
+    gap: 40px;
     align-items: center;
 }
 
 .btn {
-    width: 270px;
+    width: 100%;
     color: #fff;
     padding: 5%;
     border: none;
@@ -71,47 +75,10 @@ h1 {
     transform: scale(110%, 110%);
 }
 
-
-/* PANTALLA QUIZ  */
-
-#pantalla-quiz {
-    display: none;
-    width: 70%;
-    flex: 6 1 100%;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20%;
-    gap: 100px;
-}
-
-#pantalla-quiz span {
+#container-btn a {
     width: 100%;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 21px;
-    background: linear-gradient(45deg, #6d83c4, #819be9);
-    box-shadow:  1px 1px 2px #7890d8;
 }
 
-#pantalla-quiz span p {
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-#pantalla-quiz input {
-    height: 5vh;
-    border: #7991da solid 1px;
-}
-
-
-/* PANTALLA RESULTADOS */
-
-#pantalla-resultados {
-    display: none;
-    flex: 6 1 100%;
-}
 
 
 
@@ -142,4 +109,22 @@ footer {
     footer {
         padding: 1%;
     }
+}
+
+
+@media screen and (min-width: 1450px) {
+    
+    #pantalla-inicio {
+        font-size: 4rem;
+        width: 65%;
+    }
+
+    #container-btn a {
+        width: 60%;
+    }
+    
+    .btn{
+        font-size: 1.5rem;
+    }
+
 }

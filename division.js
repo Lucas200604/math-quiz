@@ -28,7 +28,7 @@ function generarDivisiones(num) {
     for (let i = 0; i < num; i++) {
         const a = Math.floor(Math.random() * (max - min)) + min;
         const b = Math.floor(Math.random() * (max - min)) + min;
-        divisionesLista.push({ a, b, result: Math.trunc(((a / b)*100)/100) });
+        divisionesLista.push({ a, b, result: (Math.trunc((a / b)*100))/100 });
     }
     return divisionesLista;
 }
@@ -67,6 +67,7 @@ function resultados() {
         respuestasIncorrectas++; // Sumando 1 si es incorrecto
         mensaje.textContent = `Incorrecto. La respuesta era ${result}.`;
         mensaje.style.color = `#E4080A`;
+        console.log(result)
     }
 
     indiceDivision++;
